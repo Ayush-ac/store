@@ -1,0 +1,51 @@
+/* Marquee.css */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;          
+  /* max-width: 1200px;     */
+  /* border: 1px solid red; */
+}
+
+  .marquee-content, .marquee-content-reverse {
+    display: inline-block;
+    white-space: nowrap;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .marquee-content {
+    animation-name: marquee-left;
+  }
+  
+  .marquee-content-reverse {
+    animation-name: marquee-right;
+  }
+  
+  @keyframes marquee-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes marquee-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .marquee-image {
+    width: 22rem;
+    height: auto;
+    margin: 0 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .marquee-image {
+      width: 16rem;
+      margin: 0 -1rem;
+    }
+  }
+
+  
+  

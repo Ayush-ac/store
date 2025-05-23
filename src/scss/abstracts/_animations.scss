@@ -1,0 +1,32 @@
+@-webkit-keyframes move-left-right {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    50% {
+        -webkit-transform: translateX(1rem);
+        transform: translateX(1rem);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes move-left-right {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    50% {
+        -webkit-transform: translateX(1rem);
+        transform: translateX(1rem);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}

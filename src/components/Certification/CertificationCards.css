@@ -1,0 +1,115 @@
+.cert-card {
+  border-radius: 12px;
+  padding: 25px 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* <<< NEW SHADOW */
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  height: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.sec-cert {
+  padding: 5rem;
+  @media ( max-width: 768px) {
+    padding: 5rem 0 0 0;
+    margin-bottom: 5rem;
+  }
+}
+  
+  .titlee {
+    font-size: 1.6rem;
+    color: #3a6ff8;
+    font-weight: 500;
+    margin-bottom: 1%;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .head{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .cert-card .cert-icon {
+    width: 100px;
+    height: auto;
+    transition: filter 0.3s;
+    margin-top: 20%;
+  }
+  
+  .cert-card .cert-title {
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .cert-card.hover-effect {
+    width: clamp(150px, 12vw, 300px); 
+    height: clamp(200px, 30vh, 400px); 
+    padding: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(214, 208, 208);
+  }
+  
+  @media (max-width: 768px) {
+    .cert-card.hover-effect {
+      width: 104px;
+      height: 160px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; /* Optional */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional */
+      margin: auto;
+    }
+  }
+ 
+  .cert-title {
+    margin-top: 20%;
+  }
+  
+  .cert-card.hover-effect:hover {
+    background: linear-gradient(to bottom, #3a6ff8, #1a004b);
+    color: #ffffff;
+    transform: scale(1.02);
+  }
+  
+  .cert-card.hover-effect:hover .cert-title {
+    color: #ffffff;
+  }
+  
+  /* @media (max-width: 768px) {
+    .cert-card.hover-effect {
+      background: linear-gradient(to bottom, #3a6ff8, #1a004b);
+      color: #ffffff;
+      transform: scale(1.02);
+      border: 1px solid red;
+    }
+  
+    .cert-card.hover-effect .cert-title {
+      color: #ffffff;
+    }
+  } */
+
+
+  
+  
+
+  /* .cert-card.hover-effect:hover .cert-icon {
+    filter: brightness(0) invert(1); /
+  } */
+  

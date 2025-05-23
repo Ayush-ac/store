@@ -1,0 +1,70 @@
+.btn-url {
+    width: 15rem;
+    height: 5rem;
+    @include flex-center-row;
+    border-radius:10px;
+    border: 0.2rem solid map-get($colors, "dark-green");
+    color: map-get($colors, "dark-green");
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size:18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+
+    @include transition-ease-in(all);
+
+    @include breakpoint(tablet) {
+        width: 13rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+
+    &.second {
+        border: 0 !important;
+        color: white;
+        background-color: map-get($colors, "dark-green");
+
+        &:hover {
+            background-color: darken(map-get($colors, "dark-green"), 10%) !important;
+        }
+    }
+
+    &.third {
+        height: 4.5rem;
+        border: 0.2rem solid white !important;
+        color: white;
+        background-color: transparent;
+
+        @include breakpoint(tablet) {
+            width: 16rem;
+        }
+
+        &:hover {
+            background-color: white !important;
+            color: map-get($colors, "dark-green");
+        }
+    }
+
+    &.fourth {
+        height: 4.5rem;
+        background-color: white;
+        color: map-get($colors, "medium-green");
+
+        &:hover {
+            color: map-get($colors, "medium-green") !important;
+            background-color: white !important;
+        }
+    }
+
+    &.btn-card {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.33rem;
+    }
+
+    &:hover {
+        background-color: map-get($colors, "dark-green");
+        color: white;
+    }
+}

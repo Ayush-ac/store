@@ -1,0 +1,215 @@
+.deals {
+    position: relative;
+    @include hero-pic("../../../public/assets/images/banner/banner-01.jpg");
+    height: 80vh !important;
+
+    .row {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        @include flex-center-column;
+    }
+
+    &__offers {
+        height: auto;
+        position: relative !important;
+        background-color: map-get($colors, "native-dark");
+
+        .row {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            text-align: center;
+            @include flex-center-column;
+        }
+
+        &__search {
+            width: 100%;
+            padding: calc-padding-20();
+            border-radius: 0 0 1.6rem 1.6rem;
+            @include flex-center-row;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            z-index: 66;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: map-get($colors, "medium-green");
+            color: white;
+
+            @include breakpoint(tablet) {
+                margin: 0 auto !important;
+                text-align: center;
+            }
+
+            &__form {
+                width: 100%;
+                @include flex-evenly-row;
+                text-transform: capitalize;
+
+                @include breakpoint(tablet) {
+                    height: 19rem;
+                    @include flex-evenly-column;
+                }
+
+                &__title {
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                }
+
+                select {
+                    -ms-flex-preferred-size: 15%;
+                    flex-basis: 15%;
+                    border: none;
+                    border-bottom: 0.2rem solid white;
+                    background-color: map-get($colors, "medium-green");
+                    color: white;
+                    font-size: 1.7rem;
+                    text-transform: capitalize;
+
+                    @include breakpoint(tablet) {
+                        width: 80%;
+                        display: block;
+                        margin-block: 1.7rem !important;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        &__cards {
+            width: 100%;
+            padding: 15rem 0;
+            @include flex-center-column;
+
+            @include breakpoint(tablet) {
+                padding: 30rem 0;
+            }
+
+            &__title {
+                color: map-get($colors, "semi-native-dark");
+                text-transform: capitalize;
+                font-size: 3.1rem;
+                font-weight: 600;
+
+                @include breakpoint(tablet) {
+                    font-size: 2.3rem;
+                }
+            }
+
+            &__desc {
+                width: 60%;
+                margin: 1.2rem auto;
+                text-align: center;
+                line-height: 1.7;
+                font-size: 1.5rem;
+                color: white;
+
+                @include breakpoint(tablet) {
+                    width: 90%;
+                    font-size: 1.3rem;
+                }
+            }
+
+            &__container {
+                width: 100%;
+                margin-top: 6rem;
+                @include grid-columns(2);
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 3rem;
+
+                @include breakpoint(tablet) {
+                    @include grid-columns(1);
+                    gap: 2.4rem;
+                }
+
+                &__card {
+                    height: 38rem;
+                    @include flex-between-row;
+                    border-radius: 2rem;
+                    background-color: white;
+
+                    &__img {
+                        width: 48%;
+                        height: 100%;
+                        border-radius: 2rem 0 0 2rem;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 2rem 0 0 2rem;
+                        }
+                    }
+
+                    &__info {
+                        width: 49%;
+                        height: 100%;
+                        @include flex-evenly-column;
+                        -webkit-box-align: start;
+                        -ms-flex-align: start;
+                        align-items: flex-start;
+                        text-transform: capitalize;
+
+                        &__duration {
+                            color: map-get($colors, "medium-green");
+                            font-size: 1.6rem;
+
+                            @include breakpoint(tablet) {
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        &__city {
+                            font-weight: 700;
+                            font-size: 2rem;
+
+                            @include breakpoint(tablet) {
+                                font-size: 1.8rem;
+                            }
+                        }
+
+                        hr {
+                            width: 85%;
+                            height: 0.2rem;
+                            background-color: map-get($colors, "native-dark");
+                        }
+
+                        &__inner {
+                            width: 85%;
+                            margin-block: -2rem !important;
+                            @include flex-between-row;
+
+                            &__part {
+                                font-size: 1.4rem;
+                                color: map-get($colors, "whiter-color");
+
+                                @include breakpoint(tablet) {
+                                    font-size: 1.2rem;
+                                }
+
+                                span:first-child {
+                                    margin-right: 0.5rem;
+                                }
+                            }
+                        }
+
+                        &__desc {
+                            width: 85%;
+                            font-size: 1.3rem;
+                            text-align: start;
+                            color: map-get($colors, "whiter-color");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

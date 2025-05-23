@@ -1,0 +1,59 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 90%;
+    margin: 0 auto; /* ⬅️ This centers it horizontally */
+  }
+  
+  .myText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #3366ff;
+    text-align: center;
+    margin-top: 3%;
+    text-transform: none;
+  
+    @media (max-width: 768px) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 8%;
+    }
+  }
+
+  .responsiveHeading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    color: #1A1A1A;
+    text-align: center;
+    margin-top: 1%;
+    text-transform: none;
+  
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-transform: capitalize; /* for title case */
+      margin-bottom: 5%;
+    }
+  }
+
+
+  .hide-on-mobile {
+    display: block;
+  
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  
+  

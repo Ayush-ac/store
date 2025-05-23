@@ -1,0 +1,186 @@
+.visit {
+    width: 100vw;
+    background-color: map-get($colors, "native-dark");
+
+    &__heading {
+        width: 100%;
+        text-align: start;
+
+        &__title {
+            font-size: 3rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: map-get($colors, "semi-dark");
+
+            @include breakpoint(large) {
+                text-align: center;
+            }
+
+            @include breakpoint(mobile) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__desc {
+            width: 40%;
+            margin-top: 1rem;
+            color: white;
+            font-size: 1.4rem;
+            letter-spacing: 0.11rem;
+            line-height: 1.8;
+
+            @include breakpoint(large) {
+                width: 98%;
+                text-align: center;
+            }
+
+            @include breakpoint(mobile) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__countries {
+        width: 100%;
+        @include flex-between-row;
+
+        @include breakpoint(large) {
+            @include flex-between-column;
+        }
+
+        &__left {
+            width: 62%;
+            margin-block: 4rem;
+
+            @include breakpoint(large) {
+                width: 80%;
+            }
+
+            &__card {
+                margin-block: 3rem;
+                @include grid-columns(2);
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                gap: 1.2rem;
+
+                @include breakpoint(tablet) {
+                    @include grid-columns(1);
+                }
+
+                &__img {
+                    width: 30rem;
+                    height: 25rem;
+                    border-radius: 1.4rem;
+
+                    @include breakpoint(tablet) {
+                        width: 100%;
+                        height: 40rem;
+                    }
+
+                    @include breakpoint(mobile) {
+                        width: 100%;
+                        height: 30rem;
+                        margin: 0 auto 2rem;
+                    }
+
+                    img {
+                        width: 100% !important;
+                        height: 100% !important;
+                        border-radius: 1.4rem;
+                    }
+                }
+
+                &__info {
+                    &__top {
+                        width: 100%;
+                        @include flex-between-row;
+
+                        &__text {
+                            @include flex-start-column;
+
+                            &__region-1 {
+                                color: map-get($colors, "semi-dark");
+                                font-size: 2.2rem;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+
+                            &__region-2 {
+                                color: map-get($colors, "semi-white-color");
+                                font-size: 1.6rem;
+                                font-weight: 500;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+
+                    &__desc {
+                        margin-block: 1.3rem;
+                        font-size: 1.4rem;
+                        line-height: 1.7;
+                        color: map-get($colors, "semi-white-color");
+                    }
+
+                    &__extra {
+                        width: 100%;
+                        margin-block: 1rem;
+                        @include flex-between-row;
+
+                        span {
+                            display: inline-block;
+                            margin-inline: 0.5rem;
+                            font-size: 1.6rem;
+                            color: map-get($colors, "semi-white-color");
+
+                            @include breakpoint(mobile) {
+                                font-size: 1.3rem;
+                                margin-inline: 0.4rem;
+                            }
+                        }
+                    }
+
+                    &__link {
+                        margin-block: 1.2rem;
+
+                        &__anchor {
+                            font-size: 1.5rem;
+                            text-transform: capitalize;
+                            color: map-get($colors, "dark-green");
+                        }
+
+                        svg {
+                            margin-left: 0.7rem;
+                            @include animation-left-right(1.3s);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__map {
+            width: 30%;
+            height: 50rem;
+            margin: 0 auto;
+            border-radius: 3rem;
+
+            @include breakpoint(large) {
+                width: 80%;
+            }
+
+            iframe {
+                width: 33rem;
+                height: 60rem;
+                border-radius: 3rem;
+
+                @include breakpoint(large) {
+                    width: 100%;
+                }
+
+                @include breakpoint(tablet) {
+                    height: 50rem;
+                }
+            }
+        }
+    }
+}

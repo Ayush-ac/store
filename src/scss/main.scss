@@ -1,0 +1,26 @@
+// * Import index file from abstracts.
+@import "./abstracts/index";
+
+// * Import index file from base.
+@import "./base/index";
+
+// * Import index file from components.
+@import "./components/index";
+
+// * Import index file from layout.
+@import "./layout/index";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.landing-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+body{
+  overflow-x: hidden;
+}

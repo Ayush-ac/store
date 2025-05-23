@@ -1,0 +1,44 @@
+  .growing-section{
+   //   background-image: url(../../../public/assets/images/growing/bggrowing-shape.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    
+  }
+
+.growing {
+    .growing-business {
+        &.first{
+           transform: translate(0px, -60px);
+           text-align: center;
+        }
+         &.firsttwo{
+           transform: translate(0px, -60px);
+           text-align: right;
+        }
+         &.one{
+            text-align: right;
+         }
+          &.two{
+            text-align: center;
+            transform: translate(50px, 80px);
+         }
+           &.fourth{
+            transform: translate(-10px, -50px);
+         }
+         &.fivth{
+            transform: translate(0px, 40px);
+         }
+        
+    }
+}
+
+@media (max-width: 768px) {
+   .hide-on-mobile {
+     display: none !important;
+   }
+ }
+
+ .growingButton {
+   transform: translate(-50px, 200px);
+   }

@@ -1,0 +1,53 @@
+.container {
+    height: 100%;
+    padding-inline: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* * Small */
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+
+    /* * Medium */
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+
+    /* * Large */
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+section {
+    padding: 12rem 0;
+}
+
+.custom-line {
+    width: 100% !important;
+    height: 0.2rem !important;
+    background-color: map-get($colors, "semi-white-color");
+}
+
+.enter-section {
+    @include flex-around-column;
+}
+
+.enter-sec-text {
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    color: white;
+
+    @include breakpoint(tablet) {
+        font-size: 1.6rem;
+    }
+}
+
+.enter-sec-title {
+    margin-block: 2.2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+}

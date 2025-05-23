@@ -1,0 +1,47 @@
+.first-footer {
+    width: 100vw;
+    @include flex-center-row;
+    background-image: url("../../../public/assets/images/cta-bg.jpg");
+    @include reset-bg;
+
+    .row {
+        @include flex-between-row;
+
+        @include breakpoint(tablet) {
+            @include flex-between-column;
+        }
+    }
+
+    &__left {
+        text-align: start;
+        color: white;
+
+        @include breakpoint(tablet) {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+
+            @include breakpoint(tablet) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__desc {
+            font-size: 2rem;
+            text-transform: capitalize;
+
+            @include breakpoint(tablet) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__btn {
+        @include breakpoint(tablet) {
+            margin-top: 2.1rem;
+        }
+    }
+}

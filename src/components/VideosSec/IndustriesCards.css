@@ -1,0 +1,175 @@
+.industry-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  height: 100%;
+  min-height: 472px;
+  width: 100%;
+  max-width: 388px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px  !important;
+
+  @media (max-width: 768px) {
+    border-radius: 8px !important;
+  }
+}
+
+
+
+.industry-container {
+  width: 90%; /* default for desktop */
+}
+
+@media (max-width: 768px) {
+  .industry-container {
+    width: 100%; /* full width on tablets and mobile */
+    padding-bottom: 0px !important;
+  }
+}
+
+
+.custom-heading-industry {
+  font-family: 'Inter, sans-serif  ';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F78E0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .custom-heading-industry {
+    font-size: 12px  !important;   
+    margin-top: 15%;
+  }
+}
+
+
+.custom-title-industry {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: normal; /* or specify if you want */
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: capitalize;  /* title case */
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .custom-title-industry {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+
+/* Video wrapper stays at top initially, expands on hover */
+.video-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.8);
+  border-radius: 10px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.industry-card .card-content .card-title{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #1C1C1C;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.industry-card.hovered .play-icon {
+  opacity: 0;
+}
+
+/* Hover Effects */
+.industry-card.hovered .video-wrapper {
+  height: 100%;
+}
+
+.industry-card.hovered .card-video {
+  height: 100%;
+  filter: brightness(1);
+}
+
+.industry-card.hovered .card-content {
+  display: none;
+}
+
+/* Card Body Styling (Optional improvement) */
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+
+  /* @media (max-width:768px) {
+   height: 20vh; 
+  } */
+}
+
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px; /* optional: spacing under the title */
+  color: #000; /* adjust if you have a theme color */
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.list-item li{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 3.5rem;
+  position: relative;
+  padding-left: 28px;
+  color: #3F3F3F; /* slightly softer black for better readability */
+  
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 3.2rem;
+  }
+}
+.list-item li .icon{
+ width: 20px;
+ height: 20px;
+ object-fit: contain;
+ position: absolute;
+ top: 8px;
+ left: 0;
+}

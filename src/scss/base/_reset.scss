@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $main-font-size;
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    background-color: map-get($colors, "dark-green");
+    color: white;
+}
+
+::selection {
+    background-color: map-get($colors, "dark-green");
+    color: white;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    border-radius: 4.5rem;
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: map-get($colors, "dark-green");
+}
+
+body::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+a,
+svg,
+.tap-light-remove {
+    -webkit-tap-highlight-color: transparent !important;
+}

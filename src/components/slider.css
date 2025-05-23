@@ -1,0 +1,78 @@
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.custom-prev {
+  left: 10px;
+}
+
+.custom-next {
+  right: 10px;
+}
+.slick-prev:before,
+.slick-next:before {
+  display: none !important;
+}
+
+@media (max-width: 576px) {
+    .custom-prev,
+    .custom-next {
+      width: 24px;
+      height: 24px;
+      top: 45%;
+    }
+  
+    .custom-prev {
+      left: 5px;
+    }
+  
+    .custom-next {
+      right: 5px;
+    }
+  
+    .custom-prev svg,
+    .custom-next svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .custom-slider-container {
+    position: relative; /* Establish positioning context */
+    width: 100%;
+    max-width: 530px;
+    min-width: 300px;
+    height: 290px;
+    margin: 0 auto;
+    /* border: 2px solid #ccc; */
+    border-radius: 10px;
+    overflow: visible; 
+    
+    @media (max-width: 768px) {
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+  }
+  
+  /* Increase the size of the dots */
+.slick-dots li button::before {
+  font-size: 12px;  /* Increase from default 10px or so */
+  color: #D9D9D9;   /* Change dot color if you want */
+  opacity: 1;       /* Make sure they are visible */
+}
+
+/* Optionally, increase active dot size or color */
+.slick-dots li.slick-active button::before {
+  font-size: 16px;
+  color: #3F78E0;
+  opacity: 1;
+}
+
+

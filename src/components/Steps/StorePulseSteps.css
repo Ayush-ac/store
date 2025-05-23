@@ -1,0 +1,207 @@
+.storepulse-container {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    padding: 2rem;
+    margin-top: 3%; 
+    /* margin-bottom: 5%;  */
+    text-align: center;
+    box-sizing: border-box;
+    /* border: 1px  solid red; */
+    
+  }
+  
+  /* Default styles for larger screens (tablet and up) */
+.subtitle {
+    color: #3366ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;        /* Default for larger screens */
+    line-height: 1.5rem;     
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    color: #111;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;          /* Default for larger screens */
+    letter-spacing: 0.05em;
+    margin-bottom: 4rem;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .subtitle {
+      font-size: 1.2rem;        /* Smaller size for mobile */
+      line-height: 1.4rem;      /* Adjust line-height if needed */
+      margin-bottom: 0.8rem;    /* Adjust spacing between elements */
+    }
+  
+    .title {
+      font-size: 2.5rem;        /* Smaller size for mobile */
+      margin-bottom: 2rem;      /* Adjust space below title */
+    }
+  }
+  
+  /* Even smaller screen sizes (e.g., portrait mobile or small devices) */
+  @media (max-width: 480px) {
+    .subtitle {
+      font-size: 1rem;          /* Even smaller for very small screens */
+      line-height: 1.3rem;      /* Adjust line-height for tighter spacing */
+      margin-bottom: 0.5rem;    /* Smaller space */
+    }
+  
+    .title {
+      font-size: 2rem;          /* Smaller size for very small screens */
+      margin-bottom: 1.5rem;    /* Adjust spacing */
+    }
+  }
+  
+  .steps-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    line-height: 2rem;
+  }
+  
+  .step-box {
+    background: #fff; /* Light blue background for highlighting */
+    /* box-shadow: 0 6px 20px rgba(227, 232, 237, 0.693); More pronounced blue-tinted shadow */
+    /* border: 2px solid #007bff; Blue border for emphasis */
+    border-radius: 12px;
+    flex: 1 1 220px;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 25vh;
+    padding-top: 3rem;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.25);
+  }
+  
+ 
+  
+  
+  /* .step-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.25);
+  }
+   */
+  .highlighted {
+    border: 2px solid #3366ff;
+  }
+ 
+  .step-box h3 {
+    font-family:  'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .step-box p {
+    font-family: 'Inter', sans-serif; /* Set font to Inter */
+    font-weight: 400;                 /* Normal weight */
+    font-size: 1.4rem;                  /* Default font size */
+    line-height: 2rem;                /* Line height */
+    letter-spacing: 0.5%;               /* No letter spacing */
+    text-align: center;               /* Center the text horizontally */
+    margin-bottom: 1.5rem; 
+    margin-top: 1.2rem;
+  }
+
+  .steps-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 92%;
+    /* max-width: 1200px; Same width line should cover */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .horizontal-line {
+    position: absolute;
+    top: 9rem; /* aligns with circle centers */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #3366ff; /* light blue */
+    z-index: 0;
+  }
+  
+  
+  .circle {
+    background: #3366ff;
+    color: #fff;
+    font-weight: bold;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+  }
+  
+  /* Hide horizontal line on mobile */
+  @media (max-width: 768px) {
+    .horizontal-line {
+      display: none;
+    }
+  
+    .steps-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .steps-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .storepulse-container description {
+    font-family: 'Inter', sans-serif; /* Set font to Inter */
+    font-weight: 400;                 /* Normal weight */
+    font-size: 2rem;                  /* Default font size */
+    line-height: 2rem;                /* Line height */
+    letter-spacing: 0.5%;               /* No letter spacing */
+    text-align: center;               /* Center the text horizontally */
+    margin-bottom: 1.5rem;            /* Optional margin for spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .storepulse-container description {
+      font-size: 12px;                /* Smaller font size for tablets */
+      line-height: 18px;              /* Adjust line height */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .storepulse-container description {
+      font-size: 10px;                /* Smaller font size for mobile */
+      line-height: 16px;              /* Adjust line height */
+    }
+  }
+  

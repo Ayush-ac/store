@@ -1,0 +1,16 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center-row;
+    position: relative;
+    @include fade(show);
+
+    &.hide {
+        @include fade(hide);
+    }
+
+    img {
+        width: 14rem;
+        height: 14rem;
+    }
+}
