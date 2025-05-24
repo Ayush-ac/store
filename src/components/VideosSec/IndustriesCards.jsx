@@ -17,17 +17,19 @@ import solidTime from '../../assets/icon-park-solid_time.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { WistiaPlayer } from "@wistia/wistia-player-react";
+
 
 const iconMatrix = [
   [solidTime, footprint, maleFemale, chartData],
-  [haircross, truckBag,  vegetarian,shopTime ],
-  [bagHandle,  racingHelmet,careStaffArea, truckDelivery ]
+  [haircross, truckBag, vegetarian, shopTime],
+  [bagHandle, racingHelmet, careStaffArea, truckDelivery]
 ];
 
 const data = [
   {
     title: 'Retail Enterprises',
-    video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    video: 'tfbwta26iw',
     points: [
       'Opening and closing time',
       'Footfall and conversion tracking',
@@ -37,7 +39,7 @@ const data = [
   },
   {
     title: 'Food & Beverage',
-    video: 'https://www.w3schools.com/html/movie.mp4',
+    video: 'xtk1o7jtdr',
     points: [
       'Hairnet Compliance',
       'Delay Detection for Delivery Partner',
@@ -47,7 +49,7 @@ const data = [
   },
   {
     title: 'Manufacturing',
-    video: 'https://www.w3schools.com/html/mov_bbb.mp4',
+    video: 'fa1zro2yzc',
     points: [
       'Sack-Bag Counter',
       'Helmet & PPE Kit Compliance',
@@ -63,9 +65,9 @@ const IndustriesCards = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800, 
-      easing: 'ease-in-out', 
-      once: true, 
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
 
@@ -117,7 +119,7 @@ const IndustriesCards = () => {
               onMouseLeave={() => handleMouseLeave(idx)}
             >
               <div className="video-wrapper">
-                <video
+                {/* <video
                   className="card-video"
                   src={item.video}
                   muted
@@ -125,7 +127,14 @@ const IndustriesCards = () => {
                   ref={(el) => (videoRefs.current[idx] = el)}
                   preload="metadata"
                 />
-                <div className="play-icon">&#9658;</div>
+                <div className="play-icon">&#9658;</div> */}
+                {item.video && typeof item.video === 'string' ? (
+                  <WistiaPlayer mediaId={item.video} options={{
+                  }}/>
+                ) : (
+                  'loading...'
+                )}
+
               </div>
               <Card.Body className="card-content">
                 <Card.Title>{item.title}</Card.Title>
