@@ -179,7 +179,7 @@ const Landing = () => {
     <TestimonialSlider />
     <BrandShowcase />
     <Questions />
-    {/* <GrowingBusiness /> */}
+    <GrowingBusiness />
     <Footer />
 
 

@@ -17,6 +17,10 @@ import solidTime from '../../assets/icon-park-solid_time.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import retail from '../../assets/images/thumbnails/retail.png'
+import fab from '../../assets/images/thumbnails/f&b.png'
+import maf from '../../assets/images/thumbnails/maf.png'
+
 import { WistiaPlayer } from "@wistia/wistia-player-react";
 
 
@@ -30,6 +34,7 @@ const data = [
   {
     title: 'Retail Enterprises',
     video: 'tfbwta26iw',
+    thumbnail: retail,
     points: [
       'Opening and closing time',
       'Footfall and conversion tracking',
@@ -40,6 +45,7 @@ const data = [
   {
     title: 'Food & Beverage',
     video: 'xtk1o7jtdr',
+    thumbnail: fab,
     points: [
       'Hairnet Compliance',
       'Delay Detection for Delivery Partner',
@@ -50,6 +56,7 @@ const data = [
   {
     title: 'Manufacturing',
     video: 'fa1zro2yzc',
+    thumbnail: maf,
     points: [
       'Sack-Bag Counter',
       'Helmet & PPE Kit Compliance',
@@ -62,6 +69,8 @@ const data = [
 const IndustriesCards = () => {
   const videoRefs = useRef([]);
   const [hoverIndex, setHoverIndex] = useState(null);
+  const [playingIndex, setPlayingIndex] = useState(null);
+
 
   useEffect(() => {
     AOS.init({
@@ -114,28 +123,29 @@ const IndustriesCards = () => {
         {data.map((item, idx) => (
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center">
             <Card
-              className={`industry-card p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
-              onMouseEnter={() => handleMouseEnter(idx)}
-              onMouseLeave={() => handleMouseLeave(idx)}
+              // className={`industry-card p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
+              // onMouseEnter={() => handleMouseEnter(idx)}
+              // onMouseLeave={() => handleMouseLeave(idx)}
             >
-              <div className="video-wrapper">
-                {/* <video
-                  className="card-video"
-                  src={item.video}
-                  muted
-                  loop
-                  ref={(el) => (videoRefs.current[idx] = el)}
-                  preload="metadata"
-                />
-                <div className="play-icon">&#9658;</div> */}
-                {item.video && typeof item.video === 'string' ? (
-                  <WistiaPlayer mediaId={item.video} options={{
-                  }}/>
+              <div className="video-wrapper" onMouseEnter={() => setPlayingIndex(idx)} onMouseLeave={() => {
+                setPlayingIndex(null);
+              }}
+              >
+                {playingIndex === idx ? (
+                  <div className="wistia-embed-wrapper">
+                    <WistiaPlayer mediaId={item.video} />
+                  </div>
                 ) : (
-                  'loading...'
+                  <>
+                    <img
+                      src={item.thumbnail}
+                      alt={`${item.title} Thumbnail`}
+                    />
+                    <div className="play-icon">&#9658;</div>
+                  </>
                 )}
-
               </div>
+
               <Card.Body className="card-content">
                 <Card.Title>{item.title}</Card.Title>
                 <ul className="list-item list-unstyled">
