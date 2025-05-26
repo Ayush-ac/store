@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    height: 425px;
+    /* height: 425px; */
     margin-top: 10rem;
     
     @media (max-width: 768px) {
@@ -17,7 +17,7 @@
     @media (max-width: 768px) {
       /* font-weight: 600;
       font-size: 0.7rem; */
-      text-align: center;
+      /* text-align: center; */
     }
   }
   
@@ -62,15 +62,16 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      text-align: center;
+      /* text-align: center; */
     }
   }
 
   .foot-div-2 {
-    padding-left: 15% !important;
+    padding-left: 10% !important;
+    margin-top: 1rem;
 
     @media (max-width: 768px) {
-      padding-left: 1% !important;
+      padding-left: 6% !important;
     }
   }
 

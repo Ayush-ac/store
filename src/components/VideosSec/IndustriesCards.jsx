@@ -133,13 +133,14 @@ const IndustriesCards = () => {
               >
                 {playingIndex === idx ? (
                   <div className="wistia-embed-wrapper">
-                    <WistiaPlayer mediaId={item.video} />
+                    <WistiaPlayer mediaId={item.video} autoplay  />
                   </div>
                 ) : (
                   <>
                     <img
                       src={item.thumbnail}
                       alt={`${item.title} Thumbnail`}
+                      // style={{width:'100%'}}
                     />
                     <div className="play-icon">&#9658;</div>
                   </>

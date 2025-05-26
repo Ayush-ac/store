@@ -106,7 +106,10 @@ const Landing = () => {
       >
         <div className="container">
 
-          <button className='mob-book-demo'>Book Demo</button>
+         <div class="button-container">
+  <button class="mob-book-demo">Book Demo</button>
+</div>
+
 
           <div className="row">
             <div className="col-lg-12">
@@ -179,11 +182,12 @@ const Landing = () => {
     <TestimonialSlider />
     <BrandShowcase />
     <Questions />
-    <GrowingBusiness />
+    {/* <GrowingBusiness /> */}
     <Footer />
 
 
     {/* <Visit /> */}
+
 
     {/* <FirstFooter />
       

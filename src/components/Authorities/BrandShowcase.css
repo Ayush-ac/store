@@ -43,10 +43,9 @@
     margin-bottom: 1rem;       /* mb-3 */
     gap: 8rem ;    
     margin-top: 4rem;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
+ @media (max-width: 576px) {
+    display: none;
+  }
   }
 
   .secondd {
@@ -63,9 +62,10 @@
   }
 
   .custom-container {
-    height: 44.125rem; /* 450px */
+    height: auto; /* 450px */
     margin: 0 auto;    /* center horizontally */
-    padding-top: 6%;
+    padding-top: 5%;
+     padding-bottom: 5%;
     @media (max-width:767px) {
       height: 30rem;
     }
@@ -96,8 +96,3 @@
     margin-top: 4rem;
     }
   }
-
- 
-
-  
-  

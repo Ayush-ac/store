@@ -16,6 +16,9 @@ export default function Questions() {
                 infinite: false,
                 arrows: true,
                 dots: false,
+                margin:10,
+                autoplay: true,             
+                autoplaySpeed: 1000,     
                 centerMode: false,
                 prevArrow: '<button type="button" class="custom-prev">&#10094;</button>',
                 nextArrow: '<button type="button" class="custom-next">&#10095;</button>',
@@ -24,20 +27,27 @@ export default function Questions() {
                         breakpoint: 1200,
                         settings: {
                             slidesToShow: 3,
-                            slidesToShow: 4.5,
+                            slidesToScroll: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 992, 
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
                         },
                     },
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1,        // show 2 cards
-                            slidesToScroll: 1,      // scroll 1 per click
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
                         },
                     },
                     {
                         breakpoint: 480,
                         settings: {
-                            slidesToShow: 1,        // still show 2 cards on very small screens
+                            slidesToShow: 1,
                             slidesToScroll: 1,
                         },
                     },

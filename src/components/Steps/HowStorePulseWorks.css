@@ -39,7 +39,7 @@
     border-radius: 12px;
     padding: 20px;
     width: 20%;
-    height: 20rem;
+    /* height: 20rem; */
     position: relative;
     z-index: 1;
     transition: all 0.4s ease;

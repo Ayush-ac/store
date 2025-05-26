@@ -66,10 +66,20 @@
     border: 1px solid rgb(214, 208, 208);
   }
   
+   @media (max-width: 1024px) {
+    .cert-card.hover-effect{
+        width: 90%;
+        height: 100%;
+    }
+  }
+
   @media (max-width: 768px) {
+   .sec-cert {
+        padding: 5rem;
+    }
     .cert-card.hover-effect {
-      width: 104px;
-      height: 160px;
+       width: 80%;
+      height: 100%;
       border-radius: 6px;
       overflow: hidden;
       background-color: #fff; /* Optional */
@@ -77,7 +87,25 @@
       margin: auto;
     }
   }
- 
+   @media (max-width:576px) {
+  .sec-cert {
+        padding: 4rem 0rem;
+    }
+    .cert-card.hover-effect {
+       width: 80%;
+      height: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff; /* Optional */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional */
+      margin: auto;
+    }
+  }
+    @media (max-width:576px) {
+    .cert-card.hover-effect {
+       width: 104px;
+    }
+  }
   .cert-title {
     margin-top: 20%;
   }
@@ -112,4 +140,3 @@
   /* .cert-card.hover-effect:hover .cert-icon {
     filter: brightness(0) invert(1); /
   } */
-  

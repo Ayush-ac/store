@@ -19,7 +19,7 @@ const CertificationCards = () => {
       <h2 className="head">Our Certifications</h2>
       <div className="row justify-content-center">
         {certifications.map((cert, index) => (
-          <div key={index} className="col-4 col-sm-4 col-md-2 mb-4">
+          <div key={index} className="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-4">
             <div className="cert-card hover-effect">
               
               <img src={ index === 1? cmmi : isoIcon} alt={`${cert.type} badge`} className="cert-icon" />
