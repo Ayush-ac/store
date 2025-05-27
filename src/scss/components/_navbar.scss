@@ -33,11 +33,10 @@
   .login-btn {
     font-size: 20px;
   }
-
-  .booknow-btn {
+.booknow-btn {
     border: 1px solid #ececec90;
     border-radius: 7px;
-    padding: 7px 15px;
+    padding: 10px 18px;
     font-size: 16px;
     color: #fff;
   @include breakpoint(mobile) {
@@ -47,7 +46,22 @@
         }
     &:hover {
       background-color: #fff;
-      color: #000;
+      color: #3F78E0;
+    }
+  }  .booknow-btn {
+    border: 1px solid #ececec90;
+    border-radius: 7px;
+    padding: 10px 18px;
+    font-size: 16px;
+    color: #fff;
+  @include breakpoint(mobile) {
+          font-size: 14px;
+          padding:  10px 16px !important;
+        //   border: #ECECEC;
+        }
+    &:hover {
+      background-color: #fff;
+      color: #3F78E0;
     }
   }
 }

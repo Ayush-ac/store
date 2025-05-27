@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import './IndustriesCards.css';
 
@@ -67,8 +67,8 @@ const data = [
 ];
 
 const IndustriesCards = () => {
-  const videoRefs = useRef([]);
-  const [hoverIndex, setHoverIndex] = useState(null);
+  // const videoRefs = useRef([]);
+  // const [hoverIndex, setHoverIndex] = useState(null);
   const [playingIndex, setPlayingIndex] = useState(null);
 
 
@@ -81,26 +81,26 @@ const IndustriesCards = () => {
   }, []);
 
 
-  const handleMouseEnter = async (index) => {
-    const vid = videoRefs.current[index];
-    if (vid) {
-      try {
-        vid.currentTime = 0;
-        await vid.play();
-        setHoverIndex(index);
-      } catch (err) {
-        console.error(`Video play failed for index ${index}:`, err);
-      }
-    }
-  };
+  // const handleMouseEnter = async (index) => {
+  //   const vid = videoRefs.current[index];
+  //   if (vid) {
+  //     try {
+  //       vid.currentTime = 0;
+  //       await vid.play();
+  //       setHoverIndex(index);
+  //     } catch (err) {
+  //       console.error(`Video play failed for index ${index}:`, err);
+  //     }
+  //   }
+  // };
 
-  const handleMouseLeave = (index) => {
-    const vid = videoRefs.current[index];
-    if (vid && !vid.paused) {
-      vid.pause();
-    }
-    setHoverIndex(null);
-  };
+  // const handleMouseLeave = (index) => {
+  //   const vid = videoRefs.current[index];
+  //   if (vid && !vid.paused) {
+  //     vid.pause();
+  //   }
+  //   setHoverIndex(null);
+  // };
 
   return (
     <Container className="industry-container md:py-5 mt-5 b" >

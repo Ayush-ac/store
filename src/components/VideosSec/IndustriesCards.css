@@ -142,15 +142,16 @@
 }
 
 .card-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 18px!important;
   line-height: 24px;
   margin-bottom: 16px; /* optional: spacing under the title */
   color: #000; /* adjust if you have a theme color */
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
 .list-item li{
   font-family: 'Inter', sans-serif;
   font-weight: 400;

@@ -3,7 +3,7 @@
     height: 5rem;
     @include flex-center-row;
     border-radius:10px;
-    border: 0.2rem solid map-get($colors, "dark-green");
+    // border: 0.2rem solid map-get($colors, "dark-green");
     color: map-get($colors, "dark-green");
     background-color: transparent;
     text-transform: capitalize;

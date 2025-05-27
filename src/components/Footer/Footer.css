@@ -5,10 +5,9 @@
     background-position: center;
     color: white;
     /* height: 425px; */
-    margin-top: 10rem;
     
     @media (max-width: 768px) {
-      margin-top: 10rem;
+      /* margin-top: 10rem; */
     }
     /* opacity: 0.6; */
   }

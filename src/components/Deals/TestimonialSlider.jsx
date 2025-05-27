@@ -47,7 +47,7 @@ const TestimonialSection = () => {
   slidesToShow: 2,
   slidesToScroll: 1, 
   arrows: true,
-  dots: true,
+  // dots: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   dots: false,

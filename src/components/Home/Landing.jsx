@@ -13,16 +13,17 @@ import Hygieneicon from "../../assets/images/banner/state-icon-ninth.svg";
 import MarqueeSection from '../MarqueeSection';
 import StorePulseSection from '../StorePulseSection';
 import IndustriesCards from '../VideosSec/IndustriesCards';
-import StorePulseSteps from '../Steps/StorePulseSteps';
+// import StorePulseSteps from '../Steps/StorePulseSteps';
 import CertificationCards from '../Certification/CertificationCards';
 import BrandShowcase from '../Authorities/BrandShowcase';
 import Questions from '../Questions/Ques';
 import Footer from '../Footer/Footer';
 import Oneplace from '../Deals/Oneplace';
 import TestimonialSlider from '../Deals/TestimonialSlider';
-import GrowingBusiness from '../Deals/GrowingBusiness';
+// import GrowingBusiness from '../Deals/GrowingBusiness';
 import HowStorepulseWorks from '../Steps/HowStorePulseWorks';
 import mobilevd from '../../assets/images/vedios/storepulse-mobile.mp4'
+import FooterVideoSection from '../FooterVideoSection';
 
 
 
@@ -182,7 +183,7 @@ const Landing = () => {
     <TestimonialSlider />
     <BrandShowcase />
     <Questions />
-    {/* <GrowingBusiness /> */}
+    <FooterVideoSection />
     <Footer />
 
 
