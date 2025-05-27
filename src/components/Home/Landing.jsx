@@ -74,7 +74,7 @@ const Landing = () => {
       className="landing"
       id="landing"
     >
-     <video
+      <video
         autoPlay
         loop
         muted
@@ -90,7 +90,7 @@ const Landing = () => {
         playsInline
         className="mobilevid"
       >
-        <source src= {mobilevd}/>
+        <source src={mobilevd} />
       </video>
 
 
@@ -107,9 +107,9 @@ const Landing = () => {
       >
         <div className="container">
 
-         <div class="button-container">
-  <button class="mob-book-demo">Book Demo</button>
-</div>
+          <div class="button-container">
+            <button  class="mob-book-demo"><a href="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call" style={{color:'white'}}>Book Demo </a></button>
+          </div>
 
 
           <div className="row">

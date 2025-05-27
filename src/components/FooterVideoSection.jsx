@@ -32,7 +32,7 @@ const FooterVideoSection = () => {
             {/* Overlay Content */}
             <div className="overlay-content">
                 <h1>Let's <span>Start Growing</span> Your Business.</h1>
-                <button className="get-started-btn">Get started</button>
+                <a href="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call" style={{color:'white'}}><button className="get-started-btn">Get started</button></a>
             </div>
 
             <style>
