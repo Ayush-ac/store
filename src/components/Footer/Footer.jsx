@@ -33,7 +33,7 @@ const Footer = () => {
 
         <hr className="border-top" />
         <p className="lasttext text-center">
-          2024 @ StorePulse | Powered by Transcline Technologies Limited
+          2024 @ StorePulse | Powered by Transline Technologies Limited
         </p>
       </div>
     </div>
