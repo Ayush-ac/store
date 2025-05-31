@@ -190,3 +190,13 @@
    
   } 
   
+  .subtitle {
+    color: #3366ff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;        /* Default for larger screens */
+    line-height: 1.5rem;     
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+  } 

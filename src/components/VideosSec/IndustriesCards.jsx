@@ -132,8 +132,8 @@ const IndustriesCards = () => {
               }}
               >
                 {playingIndex === idx ? (
-                  <div className="wistia-embed-wrapper">
-                    <WistiaPlayer mediaId={item.video} autoplay  />
+                  <div className="wistia-embed-wrapper  popover=true">
+                    <WistiaPlayer mediaId={item.video}   />
                   </div>
                 ) : (
                   <>

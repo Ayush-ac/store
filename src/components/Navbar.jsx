@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import NavItems from "../data/NavItems";
-import logo from '../assets/logoo.png'
+import logo from '../assets/logo_black.png'
+import logo_black from '../assets/logo_black.png'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
 
                 <ul className={`navbar__list ${toggler ? "active" : ""}`}>
                     {NavItems.map(({ id, itemName, itemURL }) => (
-                        <li key={id} className="navbar__list__item">
+                        <li key={id} className="navbar__list__item text-dark">
                             <a href={itemURL} onClick={closingNavItemAfterCLick}>
                                 {itemName}
                             </a>

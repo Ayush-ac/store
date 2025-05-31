@@ -7,8 +7,23 @@
     background-color: map-get($colors, "bg-transparent");
     z-index: 9999;
         &.scrolled {
-            background-color: #0e357c;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
+                .navbar__list__item a {
+                    color: #000;
+                }
+               .navbar__actions {
+                .booknow-btn{
+                    background-color: #3F78E0;
+                        color: #fff;
+                }
+                .login-btn{
+                   color: #000;
+                }
+             
+               }
+               
         }
 
  .navbar__actions {
@@ -60,8 +75,8 @@
         //   border: #ECECEC;
         }
     &:hover {
-      background-color: #fff;
-      color: #3F78E0;
+      background-color: #3F78E0;
+      color: white;
     }
   }
 }

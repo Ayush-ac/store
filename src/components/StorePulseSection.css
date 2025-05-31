@@ -24,7 +24,12 @@
   z-index: 1;
 }
 
-
+.slick-next {
+    right: -35px;
+}
+.slick-prev {
+    left: -50px;
+}
 .custom-margin {
   width: 90% !important;
 }

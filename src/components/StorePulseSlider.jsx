@@ -87,12 +87,7 @@ const StorePulseSlider = () => {
                             <img
                                 src={img}
                                 alt={`Slide ${idx + 1}`}
-                                className="img-fluid rounded shadow"
-                                style={{
-                                    width: '100%',
-                                    maxHeight: '400px',
-                                    objectFit: 'cover'
-                                }}
+                                className="img-fluid"
                             />
                         </div>
                     ))}

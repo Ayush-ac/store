@@ -22,19 +22,19 @@ const testimonials = [
   {
     name: 'Director, COBB',
     title: 'Good service',
-    review: `StorePulse has been a game changer for us. By optimizing foot traffic and store layout, we saw a 20% increase in conversions within just a few weeks. The ability to track peak shopping times has helped us improve both staffing and customer flow.`,
+    review: `StorePulse has been a game changer for us. We deployed StorePulse at two of our outlets, to start with. With the live Hairnet Detection and Intelligent Delay Monitoring features, we have been able to comply with FSSAI guidelines and elevate our customer experience.`,
     avatar: 'https://i.pravatar.cc/60?img=1',
   },
   {
     name: 'Director, COBB',
     title: 'Good service',
-    review: `StorePulse has been a game changer for us. By optimizing foot traffic and store layout, we saw a 20% increase in conversions within just a few weeks. The ability to track peak shopping times has helped us improve both staffing and customer flow.`,
+    review: `We are being able to uncover some really great growth opportunities with StorePulse powered cameras at four of our stores. Now we know accurately when we should put in more staff members, whether our store was opened and closed on time and a lot more.`,
     avatar: 'https://i.pravatar.cc/60?img=2',
   },
   {
     name: 'Director, COBB',
     title: 'Good service',
-    review: `StorePulse has been a game changer for us. By optimizing foot traffic and store layout, we saw a 20% increase in conversions within just a few weeks. The ability to track peak shopping times has helped us improve both staffing and customer flow.`,
+    review: `We were using guesswork to understand our customer segmentation and work on making our customer experience better. StorePulse did it for us - in fact, they are doing it for us every day in our stores. We are taking decisions with accurate data now.`,
     avatar: 'https://i.pravatar.cc/60?img=3',
   },
 ];
@@ -90,7 +90,7 @@ const TestimonialSection = () => {
                         {testimonials.map((t, i) => (
                         <div className="testimonial-card" key={i}>
                           <div className='testimonial-inner'>
-                            <h6>{t.title}</h6>
+                            
                              <div className="stars">
                               {[...Array(5)].map((_, index) => (
                                 <FontAwesomeIcon
