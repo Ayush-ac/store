@@ -7,7 +7,7 @@ const Marquee = ({ images = [], direction = 'left', speed = 10 }) => {
   useEffect(() => {
     const updateSpeed = () => {
       const isMobile = window.innerWidth <= 768;
-      setResponsiveSpeed(isMobile ? 10 : speed);
+      setResponsiveSpeed(isMobile ? 2 : speed);
     };
 
     updateSpeed();

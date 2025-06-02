@@ -6,12 +6,22 @@
     padding: calc(calc-padding-20() / 4);
     background-color: map-get($colors, "bg-transparent");
     z-index: 9999;
+    .navbar__logo{
+        display: none;
+    }
         &.scrolled {
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
+            .navbar__logoo{
+                display: none;
+            }
+                .navbar__logo{
+                    display: block;
+                }
+         
                 .navbar__list__item a {
-                    color: #000;
+                    color: #fff;
                 }
                .navbar__actions {
                 .booknow-btn{
@@ -187,7 +197,7 @@
             width: 100%;
             height: 0.4rem;
             border-radius: 0.5rem;
-            background-color: map-get($colors, "darker-white");
+            background-color: #000;
             @include transition-ease(all);
         }
 

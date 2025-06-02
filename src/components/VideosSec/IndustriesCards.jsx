@@ -24,6 +24,8 @@ import maf from '../../assets/images/thumbnails/maf.png'
 import { WistiaPlayer } from "@wistia/wistia-player-react";
 
 
+
+
 const iconMatrix = [
   [solidTime, footprint, maleFemale, chartData],
   [haircross, truckBag, vegetarian, shopTime],

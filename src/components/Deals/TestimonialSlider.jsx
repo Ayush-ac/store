@@ -5,6 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faStar,faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
 import Button from '../Global/Button';
+import tbc from '../../assets/images/thumbnails/TBC.png'
+import cantabil from '../../assets/images/thumbnails/cantabil.png'
 
 const PrevArrow = ({ onClick }) => (
   <div className="custom-arrow custom-prev" onClick={onClick}>
@@ -20,16 +22,16 @@ const NextArrow = ({ onClick }) => (
 
 const testimonials = [
   {
-    name: 'Director, COBB',
+    name: 'Director, TBG',
     title: 'Good service',
     review: `StorePulse has been a game changer for us. We deployed StorePulse at two of our outlets, to start with. With the live Hairnet Detection and Intelligent Delay Monitoring features, we have been able to comply with FSSAI guidelines and elevate our customer experience.`,
-    avatar: 'https://i.pravatar.cc/60?img=1',
+    avatar: tbc,
   },
   {
-    name: 'Director, COBB',
+    name: 'Director, Cantabil',
     title: 'Good service',
     review: `We are being able to uncover some really great growth opportunities with StorePulse powered cameras at four of our stores. Now we know accurately when we should put in more staff members, whether our store was opened and closed on time and a lot more.`,
-    avatar: 'https://i.pravatar.cc/60?img=2',
+    avatar: cantabil,
   },
   {
     name: 'Director, COBB',

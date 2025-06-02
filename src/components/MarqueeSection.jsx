@@ -5,15 +5,17 @@ import cobb from '../assets/cobb-min.png'
 import columbia from '../assets/columbia-min.png'
 import pnl from '../assets/pnl-min.png'
 import spicejet from '../assets/spicejet-min.png'
+import tbc from '../assets/tbc.png'
+import ctbl from '../assets/ctbl.png'
 import './MarqueeSection.css';
 
 const MarqueeSection = () => {
   const topImages = [
-    spicejet, pnl, columbia, cobb, columbia, spicejet, pnl, columbia, cobb, columbia
+    spicejet, pnl, columbia, cobb, tbc, ctbl, spicejet, pnl, columbia, cobb, tbc, ctbl,
   ];
 
   const bottomImages = [
-    columbia, spicejet, pnl, columbia, cobb, columbia, spicejet, pnl, columbia, cobb,
+    columbia, spicejet, pnl, tbc, cobb, ctbl, columbia, spicejet, pnl, tbc, cobb, ctbl,
   ];
 
 
@@ -37,8 +39,6 @@ const MarqueeSection = () => {
       <div className="hide-on-mobile" style={{ marginTop: '1%', marginBottom: '2%' }}>
         <Marquee images={bottomImages} direction="right" />
       </div>
-
-
     </div>
   );
 };
