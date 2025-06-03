@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import NavItems from "../data/NavItems";
 import logo from '../assets/logo_black.png'
 import logoo from '../assets/logoo.png'
-import logo_black from '../assets/logo_black.png'
+// import logo_black from '../assets/logo_black.png'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);

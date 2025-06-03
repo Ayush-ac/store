@@ -19,7 +19,8 @@ const Footer = () => {
           <div className="foot-div-2  col-6 col-md-4 mb-4">
             <h5 className="fw-semibold ">Email</h5>
             <p className="mb-1">info@storepulse.ai</p>
-            <p>sales2@storepulse.ai</p>
+            <p>sales
+              @storepulse.ai</p>
           </div>
 
           <div className="foot-div-3 col-6 col-md-4 mb-4">

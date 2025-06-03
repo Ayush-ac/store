@@ -7,6 +7,7 @@ import { faStar,faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg
 import Button from '../Global/Button';
 import tbc from '../../assets/images/thumbnails/TBC.png'
 import cantabil from '../../assets/images/thumbnails/cantabil.png'
+import phl from '../../assets/phlLogo.png'
 
 const PrevArrow = ({ onClick }) => (
   <div className="custom-arrow custom-prev" onClick={onClick}>
@@ -22,22 +23,22 @@ const NextArrow = ({ onClick }) => (
 
 const testimonials = [
   {
-    name: 'Director, TBG',
+    name: 'TBC',
     title: 'Good service',
     review: `StorePulse has been a game changer for us. We deployed StorePulse at two of our outlets, to start with. With the live Hairnet Detection and Intelligent Delay Monitoring features, we have been able to comply with FSSAI guidelines and elevate our customer experience.`,
     avatar: tbc,
   },
   {
-    name: 'Director, Cantabil',
+    name: 'Cantabil',
     title: 'Good service',
     review: `We are being able to uncover some really great growth opportunities with StorePulse powered cameras at four of our stores. Now we know accurately when we should put in more staff members, whether our store was opened and closed on time and a lot more.`,
     avatar: cantabil,
   },
   {
-    name: 'Director, COBB',
+    name: 'PHL',
     title: 'Good service',
-    review: `We were using guesswork to understand our customer segmentation and work on making our customer experience better. StorePulse did it for us - in fact, they are doing it for us every day in our stores. We are taking decisions with accurate data now.`,
-    avatar: 'https://i.pravatar.cc/60?img=3',
+    review: `We were using guesswork to understand our customer segmentation and work on making our customer experience better. StorePulse did it for us - in fact, they are doing it for us every day in our stores. We are taking decisions with accurate data now`,
+    avatar: phl,
   },
 ];
 
