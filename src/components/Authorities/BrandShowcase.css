@@ -41,7 +41,7 @@
     justify-content: center;   /* justify-content-center */
     align-items: center;       /* align-items-center */
     margin-bottom: 1rem;       /* mb-3 */
-    gap: 8rem ;    
+    gap: 10rem ;    
     margin-top: 4rem;
  @media (max-width: 576px) {
     display: none;
@@ -67,7 +67,7 @@
     padding-top: 5%;
      padding-bottom: 5%;
     @media (max-width:767px) {
-      height: 30rem;
+      height: 33rem;
     }
   }
   

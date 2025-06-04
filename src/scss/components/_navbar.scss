@@ -37,6 +37,7 @@
                 .booknow-btn{
                     background-color: #3F78E0;
                         color: #fff;
+                        border: none;
                 }
                 .login-btn{
                    color: #000;
@@ -110,12 +111,12 @@
     background: transparent;
     transition: all 0.3s ease;
        @include breakpoint(mobile) {
-                padding: 4px 8px!important;
+                padding: 6px 10px!important;
         }
   }
 
   .login-btn {
-    font-size: 20px;
+    font-size: 16px;
   }
 .booknow-btn {
     border: 1px solid #ececec90;
@@ -295,4 +296,7 @@
 
 .navbar__list{
     padding-top: 10px;
+    @include breakpoint(tablet) {
+        background-color: #3F78E0;
+    }
 }

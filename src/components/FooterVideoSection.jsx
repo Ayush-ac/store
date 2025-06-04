@@ -1,4 +1,3 @@
-import React from 'react';
 import FooterVideo from '../assets/images/vedios/FooterVideo.MP4';
 import FooterMobileVideo from '../assets/images/vedios/FooterMobile.mp4';
 
@@ -78,8 +77,8 @@ const FooterVideoSection = () => {
                     .get-started-btn {
                         margin-top: 1.5rem;
                         padding: 0.75rem 2rem;
-                        font-size: 2.2rem;
-                        font-weight: 600;
+                        font-size: 1.8rem;
+                        font-weight: 400;
                         background-color: #2d63e0;
                         color: white;
                         border: none;
@@ -87,8 +86,8 @@ const FooterVideoSection = () => {
                         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
                         cursor: pointer;
                         transition: background-color 0.3s ease;
-                        height: 64px;
-                        width: 60%
+                        height: 44px;
+                        width: 40%
                     }
 
                     .get-started-btn:hover {

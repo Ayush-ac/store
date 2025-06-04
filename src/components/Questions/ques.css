@@ -6,7 +6,7 @@
   }
   
   .faq-subheading {
-    color: #9ca3af;
+    color: #70A1FB;
     font-size: 14px;
     margin-bottom: 10px;
     letter-spacing: 1px;
@@ -129,6 +129,9 @@
     cursor: pointer;
     padding: 0;
     line-height: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
   }
   /* .slick-disabled{
     display: none;
@@ -225,7 +228,7 @@
     }
   
     .custom-prev {
-      left: 40%;
+      left: 37%;
     }
   
     .custom-next {

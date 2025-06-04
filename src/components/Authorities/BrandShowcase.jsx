@@ -15,7 +15,7 @@ const BrandShowcase = () => {
   return (
     <div className="custom-container text-center  px-5">
       <div className="mb-3">
-        <span className="verified-tag">VERIFIED BY INDUSTRY AUTHORITIES</span>
+        <span className="verified-tag">IN THE NEWS</span>
       </div>
       <h2 className="subtitlee">
         From The Minds Behind Brands Featured On
@@ -23,7 +23,7 @@ const BrandShowcase = () => {
 
       {/* First Row */}
       <div className="first">
-        <div className="col-auto"><img src={vorgue} alt="Vogue" className="brand-logo" /></div>
+        {/* <div className="col-auto"><img src={vorgue} alt="Vogue" className="brand-logo" /></div> */}
         <div className="col-auto"><img src={yourstory} alt="YourStory" className="brand-logo" /></div>
         <div className="col-auto"><img src={tc} alt="TechCrunch" className="brand-logo" /></div>
         <div className="col-auto"><img src={toi} alt="TOI" className="brand-logo" /></div>
@@ -37,8 +37,8 @@ const BrandShowcase = () => {
       </div>
 
       {/* Second Row */}
-      <div className="secondd">
-        <div className="col-auto"><img src={gq} alt="GQ" className="brand-logo" /></div>
+      <div className="secondd ">
+        {/* <div className="col-auto"><img src={gq} alt="GQ" className="brand-logo" /></div> */}
         <div className="col-auto"><img src={indianexp} alt="The Indian Express" className="brand-logo" /></div>
         <div className="col-auto"><img src={dna} alt="DNA" className="brand-logo" /></div>
         <div className="col-auto"><img src={outlook} alt="Outlook" className="brand-logo" /></div>
