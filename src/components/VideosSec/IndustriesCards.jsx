@@ -20,6 +20,7 @@ import 'aos/dist/aos.css';
 import retail from '../../assets/images/thumbnails/retail.png'
 import fab from '../../assets/images/thumbnails/f&b.png'
 import maf from '../../assets/images/thumbnails/maf.png'
+import playbutton from '../../assets/playbutton.png'
 
 import { WistiaPlayer } from "@wistia/wistia-player-react";
 
@@ -125,26 +126,30 @@ const IndustriesCards = () => {
         {data.map((item, idx) => (
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center">
             <Card
-              // className={`industry-card p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
-              // onMouseEnter={() => handleMouseEnter(idx)}
-              // onMouseLeave={() => handleMouseLeave(idx)}
+            // className={`industry-card p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
+            // onMouseEnter={() => handleMouseEnter(idx)}
+            // onMouseLeave={() => handleMouseLeave(idx)}
             >
               <div className="video-wrapper" onMouseEnter={() => setPlayingIndex(idx)} onMouseLeave={() => {
                 setPlayingIndex(null);
               }}
               >
                 {playingIndex === idx ? (
-                  <div className="wistia-embed-wrapper  popover=true">
-                    <WistiaPlayer mediaId={item.video}   />
+                  <div className="wistia-embed-wrapper ">
+                    <WistiaPlayer mediaId={item.video} />
                   </div>
                 ) : (
                   <>
                     <img
                       src={item.thumbnail}
                       alt={`${item.title} Thumbnail`}
-                      // style={{width:'100%'}}
+                    // style={{width:'100%'}}
                     />
-                    <div className="play-icon">&#9658;</div>
+                    <img
+                      src={playbutton}
+                      alt="Play Icon"
+                      className="play-icon"
+                    />
                   </>
                 )}
               </div>

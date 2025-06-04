@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import NavItems from "../data/NavItems";
 import logo from '../assets/logo_black.png'
 import logoo from '../assets/logoo.png'
-// import logo_black from '../assets/logo_black.png'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -17,36 +16,53 @@ const Navbar = () => {
         window.scrollTo(0, 0);
     }
 
-    const closingNavItemAfterCLick = () => {
+    const closingNavItemAfterClick = () => {
         setToggler(false);
         goToTopOfPage();
     }
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 80) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 80) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+        // Close navbar when scrolling
+        setToggler(false);
+    };
+
+    const handleClickOutside = (e) => {
+        const navbar = document.getElementById('navbar');
+        if (navbar && !navbar.contains(e.target)) {
+            setToggler(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+        document.removeEventListener('click', handleClickOutside);
+    };
+}, []);
+
+
     return (
         <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
             <div className="container">
-              <Link className="navbar__logoo" to="/" onClick={closingNavItemAfterCLick}>
+                <Link className="navbar__logoo" to="/" onClick={closingNavItemAfterClick}>
                     <img src={logoo} alt="Woox Logo" />
                 </Link>
-                <Link className="navbar__logo" to="/" onClick={closingNavItemAfterCLick}>
+                <Link className="navbar__logo" to="/" onClick={closingNavItemAfterClick}>
                     <img src={logo} alt="Woox Logo" />
                 </Link>
 
                 <ul className={`navbar__list ${toggler ? "active" : ""}`}>
                     {NavItems.map(({ id, itemName, itemURL }) => (
                         <li key={id} className="navbar__list__item text-dark">
-                            <a href={itemURL} onClick={closingNavItemAfterCLick}>
+                            <a href={itemURL} onClick={closingNavItemAfterClick}>
                                 {itemName}
                             </a>
                         </li>
@@ -59,19 +75,15 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-
-
-                {/* Login and Book Now Buttons at the right end */}
                 <div className="navbar__actions align-items-center">
-                <a href="https://app.storepulse.ai/" className="navbar__action-btn login-btn d-none d-md-block">Login</a>
+                    <a href="https://app.storepulse.ai/" className="navbar__action-btn login-btn d-none d-md-block">Login</a>
                     <div>
-                        <a href="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call" className="navbar__action-btn booknow-btn"
-                        
-                        >Book Demo</a>
+                        <a href="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call" className="navbar__action-btn booknow-btn">
+                            Book Demo
+                        </a>
                     </div>
                 </div>
 
-                {/* Navbar Toggle for Mobile */}
                 <div className={`navbar__toggler ${toggler ? "active" : ""}`} onClick={changeToggle}>
                     <span></span>
                     <span></span>
@@ -79,7 +91,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-    )
+    );
 }
 
 export default Navbar;

@@ -50,8 +50,8 @@ const StorePulseSlider = () => {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false,  // Optionally hide arrows on mobile
-                dots: true      // Show dots navigation on mobile
+                arrows: true,  // Optionally hide arrows on mobile
+                // dots: true      // Show dots navigation on mobile
               }
             },
             {

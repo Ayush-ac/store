@@ -82,7 +82,7 @@ const HowStorepulseWorks = () => {
 
     return (
         <section className="how-it-works py-5">
-            <div className="my-5">
+            <div className="my-5 mobile-container">
                 <div className="text-center mb-5">
                     <h2 className="subtitle sub-effort">EFFORTLESS SETUP. POWERFUL INTELLIGENCE. REAL-TIME RESULTS.</h2>
                     <h1 className="title storepulseworks-title ">How StorePulse Works</h1>

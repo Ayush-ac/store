@@ -49,8 +49,7 @@
     margin-top: 2vh;
 
     @media (max-width: 768px) {
-      /* margin: auto;
-      width: 80%; */
+ 
     }
     
 }
@@ -121,6 +120,12 @@
 }
 
 @media (max-width: 768px) {
+    .mobile-container{
+      height: 100%;
+    padding-inline: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
     .steps-wrapper {
       display: flex;
       flex-wrap: nowrap;
@@ -177,6 +182,7 @@
 
         @media (max-width: 768px) {
           font-size: 12px;
+          margin-bottom: 0rem !important; 
         }
     }
   }
@@ -195,8 +201,12 @@
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;        /* Default for larger screens */
-    line-height: 1.5rem;     
+    line-height: 2rem;     
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 2rem;
+
+    
   } 
+
+

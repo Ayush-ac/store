@@ -5,7 +5,7 @@
   z-index: 1;
 
   @include breakpoint(tablet) {
-    padding: 60px 0px;
+    padding: 90px 0px;
   }
 
   &::after {
@@ -174,7 +174,7 @@
     @media (max-width: 768px) {
       position: absolute;
       top: 110%;
-      bottom: -42px;
+      bottom: -38px;
       z-index: 10;
       color: #fff;
       border-radius: 3px;

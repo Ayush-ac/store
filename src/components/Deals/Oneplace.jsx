@@ -48,7 +48,7 @@ const Oneplace = () => {
                     <div className="col-lg-12">
                     <div className="text-center mb-5">
                     <h2 className="subtitle sub-effort">Explore StorePulse Dashboard</h2>
-                    <h1 className="title storepulseworks-title ">Manage it all in one place</h1>
+                    <h1 className="title storepulseworks-title ">Manage It All In One Place</h1>
                 </div>
                         <div className='Oneplace-slider'>
                               <CustomSlider DataArr={slideData} />

@@ -16,12 +16,12 @@ export default function Questions() {
                 infinite: false,
                 arrows: true,
                 dots: false,
-                margin:10,
-                autoplay: true,             
-                autoplaySpeed: 1000,     
+                margin: 10,
+                autoplay: true,
+                autoplaySpeed: 1000,
                 centerMode: false,
-                prevArrow: '<button type="button" class="custom-prev">&#10094;</button>',
-                nextArrow: '<button type="button" class="custom-next">&#10095;</button>',
+                prevArrow: '<button type="button" class="custom-prev"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg></button>',
+                nextArrow: '<button type="button" class="custom-next"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg></button>',
                 responsive: [
                     {
                         breakpoint: 1200,
@@ -31,7 +31,7 @@ export default function Questions() {
                         },
                     },
                     {
-                        breakpoint: 992, 
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2,
