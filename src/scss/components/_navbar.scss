@@ -166,7 +166,7 @@
 
     &__list {
         @include flex-between-row;
-        gap: 6rem;
+        gap: 0rem;
 
         @include breakpoint(tablet) {
             width: 80%;
@@ -299,5 +299,6 @@
     margin-left: 10%;
     @include breakpoint(tablet) {
         background-color: #3F78E0;
+        margin-left: 0%;
     }
 }
