@@ -73,11 +73,11 @@
 /* Video wrapper stays at top initially, expands on hover */
 .video-wrapper {
   position: relative;
-  height: 200px;
+  /* height: 200px; */
   overflow: hidden;
   transition: height 0.4s ease;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 .card-video {

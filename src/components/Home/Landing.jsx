@@ -23,7 +23,7 @@ import TestimonialSlider from '../Deals/TestimonialSlider';
 // import GrowingBusiness from '../Deals/GrowingBusiness';
 import HowStorepulseWorks from '../Steps/HowStorePulseWorks';
 import mobilevd from '../../assets/images/vedios/storepulse-mobile.mp4'
-import FooterVideoSection from '../FooterVideoSection';
+import FooterVideoSection from '../VideosSec/FooterVideoSection';
 
 
 
@@ -71,152 +71,148 @@ const Landing = () => {
 
   return (
     <>
-    <div
-      className="landing"
-      id="landing"
-    >
-     <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="landing-video-bg"
-      >
-        <source src="/assets/images/vedios/storepulse-vedio.mp4" type="video/mp4" />
-      </video>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="mobilevid"
-      >
-        <source src= {mobilevd}/>
-      </video>
-
-
-      <div className='landing-overlay'></div>
-
       <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          width: '100%',
-          padding: '20px 0',
-          zIndex: 2,
-        }}
+        className="landing"
+        id="landing"
       >
-        <div className="container">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="landing-video-bg"
+        >
+          <source src="/assets/images/vedios/storepulse-vedio.mp4" type="video/mp4" />
+        </video>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="mobilevid"
+        >
+          <source src={mobilevd} />
+        </video>
 
-         <div class="button-container">
-  <button class="mob-book-demo">Book Demo</button>
-</div>
+
+        <div className='landing-overlay'></div>
+
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            width: '100%',
+            padding: '20px 0',
+            zIndex: 2,
+          }}
+        >
+          <div className="container">
+
+            <div class="button-container">
+              <button class="mob-book-demo">Book Demo</button>
+            </div>
 
 
-          <div className="row">
-            <div className="col-lg-12">
+            <div className="row">
+              <div className="col-lg-12">
 
 
 
-              <div className="landing__explore" style={{ marginBottom: '20px' }}>
-                {LandingExplore.map(({ id, texts }, i) => {
-                  const currentText = texts[indexes[i]];
-                  const currentIcon = iconMap[currentText.itemTitle] || stateicon;
+                <div className="landing__explore" style={{ marginBottom: '20px' }}>
+                  {LandingExplore.map(({ id, texts }, i) => {
+                    const currentText = texts[indexes[i]];
+                    const currentIcon = iconMap[currentText.itemTitle] || stateicon;
 
-                  return (
-                    <div className="landing__explore__item" key={id}>
-                      <img className='currentIcon' src={currentIcon} alt={currentText.itemTitle} width={56} height={56} />
-                      <div className="landing__explore__item__info">
-                        <span className="landing__explore__item__number">{currentText.itemNumber}</span>
-                        <span className="landing__explore__item__title">{currentText.itemTitle}</span>
+                    return (
+                      <div className="landing__explore__item" key={id}>
+                        <img className='currentIcon' src={currentIcon} alt={currentText.itemTitle} width={56} height={56} />
+                        <div className="landing__explore__item__info">
+                          <span className="landing__explore__item__number">{currentText.itemNumber}</span>
+                          <span className="landing__explore__item__title">{currentText.itemTitle}</span>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
-                <div className="landing__explore__item ">
-                  <Button
-                    urlValue="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call"
-                    valueText="Book Demo"
-                    className="btn-url"
-                    second={true}
-                    btnCard={false}
-                    thirdType={false}
-                    fourthType={false}
-                  />
+                    );
+                  })}
+                  <div className="landing__explore__item ">
+                    <Button
+                      urlValue="https://calendly.com/d/cm5h-3hh-gvq/storepulse-demo-discovery-call"
+                      valueText="Book Demo"
+                      className="btn-url"
+                      second={true}
+                      btnCard={false}
+                      thirdType={false}
+                      fourthType={false}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="retail_box">
-            <div className="retail_line">
-              {[0, 1, 2].map(index => (
-                <div
-                  key={index}
-                  className={`line ${index === activeIndex ? 'active' : ''}`}
-                />
-              ))}
+            <div className="retail_box">
+              <div className="retail_line">
+                {[0, 1, 2].map(index => (
+                  <div
+                    key={index}
+                    className={`line ${index === activeIndex ? 'active' : ''}`}
+                  />
+                ))}
+              </div>
+
+              <div className="retail_tabs">
+                <div className="tab">
+                  <h4>Retail</h4>
+                </div>
+                <div className="tab">
+                  <h4>F&B</h4>
+                </div>
+                <div className="tab">
+                  <h4>Manufacturing</h4>
+                </div>
+              </div>
             </div>
 
-            <div className="retail_tabs">
-              <div className="tab">
-                <h4>Retail</h4>
-              </div>
-              <div className="tab">
-                <h4>F&B</h4>
-              </div>
-              <div className="tab">
-                <h4>Manufacturing</h4>
-              </div>
-            </div>
+
           </div>
-
-
         </div>
       </div>
-    </div>
-    <div style={{ marginTop: '40px' }}>
-    <MarqueeSection />
-    </div>
-    <div style={{ marginTop: '40px' }}>
-    <StorePulseSection />
-
-    </div>
-
-    <div style={{ marginTop: '80px' }} id="industries"><IndustriesCards /></div>
-    <div style={{ marginTop: '60px' }}>
-    <HowStorepulseWorks />
-
-    </div>
-    <div style={{ marginTop: '60px' }}  id="solutions"><Oneplace /></div>
-
-    <div style={{ marginTop: '60px' }} >
-    <CertificationCards />
-
-    </div>
-    <div  style={{ marginTop: '20px' }}>
-    <TestimonialSlider />
-
-    </div>
-      <div  style={{ marginTop: '20px' }}>
-    <BrandShowcase />
+      <div >
+        <MarqueeSection />
+      </div>
+      <div >
+        <StorePulseSection />
 
       </div>
-    <Questions />
-    <div style={{ marginTop: '60px' }}>
-    <FooterVideoSection/>                     
 
-    </div>
-    {/* <GrowingBusiness /> */}
-    <Footer />
+      <div id="industries"><IndustriesCards /></div>
+      <div>
+        <HowStorepulseWorks />
 
+      </div>
+      <div id="solutions"><Oneplace /></div>
 
-    {/* <Visit /> */}
+      <div >
+        <CertificationCards />
 
-    {/* <FirstFooter />
-      
-      //     <SecondFooter /> */}
-  </>
+      </div>
+      <div  >
+        <TestimonialSlider />
+
+      </div>
+      <div  >
+        <BrandShowcase />
+
+      </div>
+      <div id='faq'>
+      <Questions />
+      </div>
+      <div >
+        <FooterVideoSection />
+
+      </div>
+
+      <Footer />
+
+    </>
   );
 };
 

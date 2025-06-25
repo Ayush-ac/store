@@ -9,10 +9,10 @@ const NavItems = [
         itemName: "Industries",
         itemURL: "#industries", 
     },
-    // {
-    //     itemName: "Our Pricing",
-    //     itemURL: "#pricing",    // <-- Scroll to this section
-    // }
+    {
+        itemName: "FAQ",
+        itemURL: "#faq",    // <-- Scroll to this section
+    }
 ];
 
 

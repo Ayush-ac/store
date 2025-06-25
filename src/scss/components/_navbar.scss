@@ -166,7 +166,7 @@
 
     &__list {
         @include flex-between-row;
-        gap: 1.5rem;
+        gap: 6rem;
 
         @include breakpoint(tablet) {
             width: 80%;
@@ -296,6 +296,7 @@
 
 .navbar__list{
     padding-top: 10px;
+    margin-left: 10%;
     @include breakpoint(tablet) {
         background-color: #3F78E0;
     }

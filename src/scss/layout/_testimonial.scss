@@ -22,6 +22,10 @@
     z-index: -1;
   }
   .testimonial-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    height: 100%;  
     span {
       font-family: "Inter", sans-serif;
       font-size: 14px;

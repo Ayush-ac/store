@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="foot-div-1 col-md-4 mb-4">
             <h2 className="fw-bold foot-head">StorePulse</h2>
             <p>
-              StorePulse turns your CCTV cameras into a smart analytics tool. Identify missed sales, <br />
+              StorePulse turns your CCTV cameras into a smart analytics tool. Identify missed sales,
               optimize customer flow, and drive conversions with AI-powered insights.
             </p>
           </div>
