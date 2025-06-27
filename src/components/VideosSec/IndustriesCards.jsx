@@ -124,7 +124,9 @@ const IndustriesCards = () => {
       >Industries We Serve</h2>
       <Row className="custom__rowss gx-4 gy-5">
         {data.map((item, idx) => (
-          <Col xs={12} sm={6} md={4} className="d-flex justify-content-center">
+          <Col
+          key={item.id || idx} 
+          xs={12} sm={6} md={4} className="d-flex justify-content-center">
             <Card
             // className={`industry-card p-3 ${hoverIndex === idx ? 'hovered' : ''}`}
             // onMouseEnter={() => handleMouseEnter(idx)}

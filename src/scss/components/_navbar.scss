@@ -166,7 +166,7 @@
 
     &__list {
         @include flex-between-row;
-        gap: 0rem;
+        gap: 6rem;
 
         @include breakpoint(tablet) {
             width: 80%;
@@ -189,7 +189,7 @@
             -webkit-transition-delay: 0.4s;
             -o-transition-delay: 0.2s;
             transition-delay: 0.2s;
-
+            gap: 0rem;
             &.active {
                 left: 50%;
                 @include fade(show);

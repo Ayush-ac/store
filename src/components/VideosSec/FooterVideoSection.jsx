@@ -19,7 +19,7 @@ const FooterVideoSection = () => {
 
             {/* Mobile Video */}
             <video
-                className="footer-video mobile-video w-100"
+                className="mobile-video"
                 autoPlay
                 loop
                 muted

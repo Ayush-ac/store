@@ -108,8 +108,8 @@ const Landing = () => {
         >
           <div className="container">
 
-            <div class="button-container">
-              <button class="mob-book-demo">Book Demo</button>
+            <div className="button-container">
+              <button className="mob-book-demo">Book Demo</button>
             </div>
 
 
